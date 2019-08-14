@@ -135,3 +135,47 @@ console.log (favouriteWeb1);
 
 favouriteWeb1.splice(2,1);
 console.log (favouriteWeb1);
+
+//FUNCTIONS FUNCTIONS FUNCTIONS
+
+const drinkOrder = (size, type) => {
+    console.log (`You ordered a ${size} cup of ${type}`);
+}
+drinkOrder ("large", "coffee");
+
+
+function factorial (n) {
+    if ((n === 0) || (n === 1)) {
+    return 1;
+    } else {
+    return (n * factorial(n-1));
+    }
+   }
+   console.log(factorial(4)); 
+
+
+
+let orderCount = 1;
+const takeOrder = (topping, topping2, size) => {
+ console.log(` Order number ${orderCount} , Pizza with ${topping}, ${topping2}, ${size}`);
+ orderCount++;
+}
+takeOrder("ham", "mushroom", "large");
+takeOrder("ham", "cheese", "large");
+
+//
+
+let balance = 1000
+let pinnumbercorrect = 7777
+const CashWithdrawal = (pinnumber, cash) => { 
+
+    if (balance  cash || pinnumbercorrect != pinnumber) {
+        console.log ("Sorry Transaction Failed, please try again"); 
+    }
+    else {
+        console.log  (`You have withdrawn £${cash}, your new account balance is £${balance-cash}`);
+}
+}
+CashWithdrawal (7777, 1000)
+
+

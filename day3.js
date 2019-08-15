@@ -118,7 +118,7 @@ let favouriteWebss = [
     "www.bbc.co.uk",
     "www.sky.com"
 ];
-favouriteWebss.shift();
+avouriteWebss.shift();f
 console.log (favouriteWebss);
 
 //unshift - adds a new item to start of array list
@@ -169,7 +169,7 @@ let balance = 1000
 let pinnumbercorrect = 7777
 const CashWithdrawal = (pinnumber, cash) => { 
 
-    if (balance  cash || pinnumbercorrect != pinnumber) {
+    if (balance < cash || pinnumbercorrect != pinnumber) {
         console.log ("Sorry Transaction Failed, please try again"); 
     }
     else {
